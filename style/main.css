@@ -115,12 +115,12 @@ h1.title {
   float: right; }
 
 .score-container:after {
-  content: "Cupcake"; }
+  content: "Troop"; }
 .score-points:after {
   content: "Elixir"; }
 
 .best-container:after {
-  content: "Cupcake Max"; }
+  content: "Troop Max"; }
 .best-points:after {
 	content: "Elixir Max"; }
 
