@@ -16,22 +16,22 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 
 
 // Set Prices
-function kcal(exp) {
-  var kcal = [];
-  kcal[2]=2;
-  kcal[4]=4;
-  kcal[8]=8;
-  kcal[16]=16;
-  kcal[32]=32;
-  kcal[64]=64;
-  kcal[128]=128;
-  kcal[256]=256;
-  kcal[512]=512;
-  kcal[1024]=1024;
-  kcal[2048]=2048;
-  kcal[4096]=4096;
-  kcal[8192]=8192;
-  return kcal[exp];
+function elixir(exp) {
+  var elixir = [];
+  elixir[2]=2;
+  elixir[4]=4;
+  elixir[8]=8;
+  elixir[16]=16;
+  elixir[32]=32;
+  elixir[64]=64;
+  elixir[128]=128;
+  elixir[256]=256;
+  elixir[512]=512;
+  elixir[1024]=1024;
+  elixir[2048]=2048;
+  elixir[4096]=4096;
+  elixir[8192]=8192;
+  return elixir[exp];
 }
 
 // Restart the game
@@ -268,7 +268,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.points += kcal(tile.value) * 2;
+          self.points += elixir(tile.value) * 2;
           if (merged.value > self.score) self.score = merged.value;
 
           // The mighty 2048 tile
