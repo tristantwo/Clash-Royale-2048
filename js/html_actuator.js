@@ -176,7 +176,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "https://tristantwo.github.io/Clash-Royale-2048/");
   tweet.textContent = "Tweet";
 
-  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " elixir" + Localize("tweet2");
+  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " Elixir" + Localize("tweet2");
   tweet.setAttribute("data-text", text);
 
   return tweet;
