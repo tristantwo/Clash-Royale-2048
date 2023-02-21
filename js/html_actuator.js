@@ -172,11 +172,11 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "giampiex");
-  tweet.setAttribute("data-url", "http://git.io/cupcakes");
-  tweet.setAttribute("data-counturl", "http://0x0800.github.io/2048-CUPCAKES");
+  tweet.setAttribute("data-url", "https://tristantwo.github.io/Clash-Royale-2048/");
+  tweet.setAttribute("data-counturl", "https://tristantwo.github.io/Clash-Royale-2048/");
   tweet.textContent = "Tweet";
 
-  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " Kcal " + Localize("tweet2");
+  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " " + Localize("tweet2");
   tweet.setAttribute("data-text", text);
 
   return tweet;
