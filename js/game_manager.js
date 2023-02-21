@@ -149,7 +149,7 @@ GameManager.prototype.fillLegend = function () {
     cell.appendChild(img);
     grid.appendChild(cell);
     row.appendChild(grid);
-    p.textContent = Localize(exp) + "  (" + kcal(exp) + " Kcal)";
+    p.textContent = Localize(exp) + "  (" + elixir(exp) + " Elixir)";
     row.appendChild(p);
 
     legend[0].appendChild(row);
