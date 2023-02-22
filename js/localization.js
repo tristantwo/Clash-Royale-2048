@@ -42,7 +42,7 @@ String.toLocaleString({
 	},
 
   "en": {
-    "%game-intro"           : "Join the <strong>Cupcakes!</strong>",
+    "%game-intro"           : "Join the <strong>Troops!</strong>",
     "%restart-button"       : "Play Again",
     "%keep-playing-button"  : "Keep going",
     "%retry-button"         : "Retry",
